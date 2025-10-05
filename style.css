@@ -1,0 +1,77 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: #4b6cb7; /* Gradient start */
+    background: linear-gradient(90deg, #4b6cb7, #182848); /* Gradient */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: #182848;
+    color: #fff;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn {
+    background: #4b6cb7;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #182848;
+}
+
+/* Sections */
+section {
+    padding: 3rem 2rem;
+}
+
+/* Footer */
+footer {
+    background: #4b6cb7;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
