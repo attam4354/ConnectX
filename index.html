@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConnectX - Home</title>
+<link rel="icon" type="image/png" href="Connect.jpg">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Animate.css for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #f4f4f4; }
+
+    /* Navbar */
+    .navbar { background: #182848; }
+    .navbar-brand { font-weight: 700; color: #fff; }
+    .navbar-nav .nav-link { color: #fff; font-weight: 500; transition: all 0.3s; }
+    .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active { color: #ffca28; }
+
+    /* Navbar collapse animation */
+    .navbar-collapse { transition: max-height 0.5s ease-in-out; overflow: hidden; }
+    .navbar-collapse.collapsing { transition: all 0.5s ease; }
+
+    /* Hero Section */
+    .hero { padding: 6rem 0; background-color: #eef2f7; }
+    .hero-content h1 { font-size: 3rem; font-weight: 700; }
+    .hero-content p { font-size: 1.2rem; margin-bottom: 2rem; color: #555; }
+    .btn-hero { border-radius: 8px; transition: all 0.3s; }
+    .btn-hero:hover { transform: scale(1.05); }
+
+    /* Features Section */
+    .features h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 3rem; }
+    .card { border-radius: 15px; transition: transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://scontent.fkhi17-2.fna.fbcdn.net/v/t39.30808-6/558274139_1127504579552415_2994099674568360064_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=zK7sKH3Vz18Q7kNvwGZ_BDQ&_nc_oc=AdlxWGfpTicj3LWG9GksyhxmaNY5FbXmX_Mdk7acMffEMZ6obe3Q58GRkSxcumCf2vs&_nc_zt=23&_nc_ht=scontent.fkhi17-2.fna&_nc_gid=p01BB2fnlhZj1VKFiXEkxQ&oh=00_AfenVGGpod-Ey6lCyKMbPWghOYl1doR3Tz2Z-6d-TIm-kg&oe=68E81155')
+              no-repeat center center/cover;
+}
+
+/* Optional dark overlay for better text visibility */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 20px auto;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+    /* Footer */
+    
+    
+    
+    footer { background: #182848; color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">ConnectX</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse animate__animated" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<section class="hero d-flex align-items-center text-center text-white">
+  <div class="container">
+    <h1 class="animate__animated animate__fadeInDown">ConnectX</h1>
+    <p class="lead animate__animated animate__fadeInUp">
+      Where technology meets connection — a hub of innovation, speed, and smart solutions built to power the future.
+    </p>
+    <a href="membership.html" class="btn btn-warning btn-lg animate__animated animate__zoomIn mt-3">
+      Become a Member
+    </a>
+  </div>
+</section>
+
+  <!-- Features Section -->
+  <section class="features py-5">
+    <div class="container text-center">
+      <h2 class="animate__animated animate__fadeInUp">Why ConnectX?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm animate__animated animate__zoomIn animate__delay-1s">
+            <div class="card-body">
+              <h5 class="card-title text-primary fw-bold">Innovative Technology</h5>
+              <p class="card-text">Access cutting-edge tools and solutions to elevate your business.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm animate__animated animate__zoomIn animate__delay-2s">
+            <div class="card-body">
+              <h5 class="card-title text-primary fw-bold">Fast Networking</h5>
+              <p class="card-text">Connect with like-minded professionals and grow your network quickly.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm animate__animated animate__zoomIn animate__delay-3s">
+            <div class="card-body">
+              <h5 class="card-title text-primary fw-bold">Business Growth</h5>
+              <p class="card-text">Leverage our platform to expand your business and opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Testimonials / Clients Carousel -->
+<section class="testimonials py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-5 animate__animated animate__fadeInDown">Our Posts</h2>
+
+    <div id="clientsCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="1.png" class="d-block mx-3 animate__animated animate__fadeIn" alt="Client 1 Logo">
+            <img src="2.png" class="d-block mx-3 animate__animated animate__fadeIn animate__delay-1s" alt="Client 2 Logo">
+            <img src="3.png" class="d-block mx-3 animate__animated animate__fadeIn animate__delay-2s" alt="Client 3 Logo">
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="Connectx.png" class="d-block mx-3 animate__animated animate__fadeIn" alt="Client 4 Logo">
+            
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#clientsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#clientsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators mt-4">
+        <button type="button" data-bs-target="#clientsCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#clientsCarousel" data-bs-slide-to="1"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+<footer class="bg-dark text-white pt-4 mt-5">
+  <div class="container text-center">
+    <div class="mb-3">
+  
+
+    <!-- Links -->
+    <div class="mb-3">
+      <a href="privacy.html" class="text-white text-decoration-none mx-3">Privacy Policy</a>
+      <a href="terms.html" class="text-white text-decoration-none mx-3">Terms & Conditions</a>
+    </div>
+
+    <p class="mb-0">&copy; 2025 ConnectX. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Navbar collapse animation using Animate.css
+    $('#navbarNav').on('show.bs.collapse', function () {
+      $(this).addClass('animate__fadeInDown');
+    });
+    $('#navbarNav').on('hide.bs.collapse', function () {
+      $(this).removeClass('animate__fadeInDown').addClass('animate__fadeOutUp');
+    });
+    $('#navbarNav').on('hidden.bs.collapse', function () {
+      $(this).removeClass('animate__fadeOutUp');
+    });
+
+    // Hero and buttons hover effect
+    $('.btn-hero').hover(function() {
+      $(this).toggleClass('shadow-lg');
+    });
+  </script>
+
+</body>
+</html>
